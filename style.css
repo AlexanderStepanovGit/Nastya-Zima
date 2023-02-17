@@ -1,0 +1,285 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("/fonts/Gilroy-Medium.woff2") format('woff2');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url("/fonts/Gilroy-Bold.woff2") format('woff2');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+.header__nav,
+.main__section-hero,
+.main__section-portfolio-image,
+.main__section-desckr,
+.main__section-skills,
+.main__section-projects,
+.footer__nav {
+  max-width: 50vw;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+/* ---------------------------------- */
+
+
+/*START-HEADER*/
+.header__nav {
+  padding: 32px 0;
+  border-bottom: 1px solid #828282;
+}
+
+.header__nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header__nav-link-item {
+  text-decoration: none;
+  color: #828282;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header__nav-link-item:hover {
+  text-decoration: none;
+  color: #070707;
+}
+/*END-HEADER*/
+/*START-MAIN first part*/
+.main__section-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: self-end;
+  padding: 40px 0;
+}
+
+.main__section-hero-title {
+  font-size: 47px;
+  line-height: 59px;
+}
+
+.main__section-hero-info {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.main__section-hero-languages{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  transform: rotate(-90deg);
+  padding: 25px 0px;
+}
+
+.main__section-hero-languages a {
+  text-decoration: none;
+  color: #070707;
+}
+
+.main__section-hero-languages a:hover {
+  color: #828282;
+}
+
+.main__section-portfolio-image {
+  padding-bottom: 100px;
+}
+/*MAIN second part*/
+.main__section-desckr {
+  text-align: center;
+  height: 506px;
+  padding-top: 126px;
+  background: #F6F6F6;
+}
+
+.main__section-desckr-title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  padding-bottom: 17px;
+}
+
+.main__section-desckr-info {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 50px;
+}
+/*MAIN  third part*/
+.main__section-skills {
+  height: 610px;
+}
+
+.section-skills__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 91px;
+  padding-bottom: 69px;
+}
+
+.section-skills__info {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 84px;
+}
+
+.section-skills__nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.section-skills__nav-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 166px;
+  height: 206px;
+}
+
+.section-skills__nav-list-item img {
+  object-fit: contain;
+  width: 80px;
+  height: 80px;
+}
+
+.section-skills__nav-list-item-img:hover {
+  margin-top: 2px;
+}
+
+.section-skills__nav-list-item span {
+  color: #828282;
+  text-align: center;
+} 
+
+.section-skills__nav-list-item-wrapper img {
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  padding: 3px 2px;
+}
+/*MAIN  fourth part*/
+.main__section-projects {
+  background: #f6f6f6;
+}
+
+.section-projects__title {
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 76px;
+  padding-bottom: 47px;
+}
+
+.section-projects__wrapper img {
+  transition: 0.5s;
+}
+
+.section-projects__wrapper img:hover {
+  opacity: 0.95;
+}
+
+.section-projects__wrapper a {
+  display: block;
+  color: #000000;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 44px;
+  padding-bottom: 99px;
+  transition: 0.6s;
+}
+
+.section-projects__wrapper a:hover {
+  background-color: #e5e0e0;;
+}
+/*END-MAIN*/
+/*START-FOOTER*/
+.footer {
+  padding-bottom: 226px;
+}
+
+.footer__nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__nav a {
+  text-decoration: none;
+}
+
+.footer__nav-title {
+  padding-top: 114px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+}
+
+.footer__nav-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.footer__nav-button {
+  display: block;
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  background-color: #070707;
+  padding: 12px 0;
+  width: 180px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.footer__nav-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 340px;
+  margin-bottom: 48px;
+  margin-top: 85px;
+}
+
+.footer__nav-list-item {
+  cursor: pointer;
+}
+
+.footer__nav-society {
+  color: #828282;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-bottom: 123px;
+}
